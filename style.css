@@ -1,0 +1,165 @@
+/* body, html, #app {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  touch-action: none;
+}
+
+#app {
+  height: 100%;
+  font-family: "Montserrat", serif;
+}
+
+#app a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  line-height: 100%;
+  user-select: none;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+p{
+  color:white;
+  background:Black;
+  padding:10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color:white;
+  text-transform: uppercase;
+} */
+
+body, html, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  touch-action: none;
+  background: #000; /* Better background for Tubes Cursor */
+  font-family: "Montserrat", sans-serif;
+}
+
+#app {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Behind text */
+}
+
+.hero {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-shadow: 0 0 20px rgba(0,0,0,0.9);
+  user-select: none;
+}
+
+/* Main Heading */
+h1 {
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Sub Heading */
+h2 {
+  font-size: 55px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Small Heading */
+h3 {
+  font-size: 22px;
+  font-weight: 500;
+  opacity: 0.9;
+  letter-spacing: 2px;
+}
+
+/* Paragraph Text */
+p {
+  font-size: 18px;
+  background: rgba(0,0,0,0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 400;
+}
+
+/* -------- Responsive for Mobile -------- */
+@media (max-width: 768px) {
+  h1 { font-size: 50px; }
+  h2 { font-size: 35px; }
+  h3 { font-size: 16px; }
+  p  { font-size: 14px; padding: 8px 15px; }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 38px; }
+  h2 { font-size: 28px; }
+}
